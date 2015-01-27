@@ -1,0 +1,17 @@
+; .testiumrc
+; defaults to false, `npm start`s the app
+launch = true
+
+[mocha]
+; defaults to 20 seconds
+timeout = 10000
+; defaults to 2 seconds
+slow = 2500
+
+[phantomjs]
+timeout = 60000 ; time in ms
+
+; Directory (relative to `root`) where logs are written by testium
+logDirectory: './test/log'
+; Directory to store automated screenshosts, e.g. on failing tests
+screenshotDirectory: './test/log/failed_screenshots'
